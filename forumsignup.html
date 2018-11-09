@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head type="text/css"><link rel ="stylesheet" href="style1.css">
+<SCRIPT>
+
+function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("myCheck");
+  // Get the output text
+  var text = document.getElementById("text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+
+</SCRIPT>
+<style>
+.form{
+   text-align: center;
+   width: 100%;
+	
+	
+}
+
+#example {
+    
+    padding:35px;
+    
+}
+
+</style></head>
+
+
+<title>Ceylon Hardware Company</title>
+
+<body background="Images/wb1.jpg">
+<header id="t1"><a href="page1.html"><img src="Images/L1.jpg"></a>Ceylon Hardware Company
+
+
+ 
+ 
+
+ </header>
+ <div class="dropdown">
+ <a href="page1.html"><button class="active">Home</button></a>
+ </div>
+ 
+<div class="dropdown">
+  <button class="active">Services</button>
+	 <div class="dropdown-content">
+    <a href="requirement1.html">Get Support</a>
+    <a href="login.html">Forum</a>
+  </div>
+  </div>
+  
+  <div class="dropdown">
+  <button class="active">Products</button>
+	<div class="dropdown-content">
+  <a href="#">Desktop</a>
+   <a href="laptops.php">Laptop</a>
+    <a href="#">Tools</a>
+ </div>
+ </div>
+ <div class="dropdown">
+ <a href="aboutus.html"><button class="active">About Us</button></a>
+ </div>
+ <div class="dropdown">
+ <a href="contact.html"><button class="active">Contact Us</button></a>
+ </div>
+ 
+<div align="right"><a href="login2.html"><button type="button" class="btn btn-primary">Login</button>
+</a>
+ <a href="signup.html"><img class="transparent"src="Images/signup.png" width="50px" height="50px" ></a></div><br>
+  
+ 
+</br> </br>
+ 
+ <div id="example">
+<h3 align="center">Join with us & exchange knowledge</h3>
+<center>
+<form action="forumsignup.php"  method="POST">
+
+<label>First name</label><br/>
+	<input  type="text" name="firstname" value=""><br/><br/>
+<label>Last name</label><br/>
+	<input type="text" name="lastname" value=""><br/><br/>
+<label>Passward</label><br/>
+<input type="password"  
+title="please include at least 1 uppercase character,1 lowercase character,and 1 number."required name="password"><br><br/>
+
+<label>Re-enter passaward</label><br/><br/>
+<input type="password" 
+title="please include at least 1 uppercase character,1 lowercase character,and 1 number."required name="reenter"><br><br/>
+
+
+<label>District</label><br/>
+	<input type="text" name="district" value=""><br/><br/>
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="textbox" size=7 value="CapTCHa" />
+I am not a ROBOT: <input type="checkbox" id="myCheck" onclick="myFunction()">
+
+<p id="text" style="display:none">Checkbox is CHECKED!</p></BR></BR>
+	
+<input type="submit" value="Submit">
+</form>
+</center>
+</div>
+<a href="#"><img class="transparent"src="Images/fb.png" height="50px" width="50px" align="right"></a>
+<a href="#"><img class="transparent"src="Images/twitter.jpg" height="50px" width="50px" align="right"></a>
+
+<a href="#"><img class="transparent"src="Images/google.png" height="50px" width="50px" align="right"></a>
+
+<a href="#"><img class="transparent"src="Images/intagram.jpg" height="50px" width="50px" align="right"></a>
+<a href="https://www.youtube.com/"><img class="transparent"src="Images/youtube.png" height="50px" width="50px" align="right"></a>
+
+
+
+
+
+
+<footer><h4>2018 Ceylon Hardware Company,INC.ALL RIGHT RESERVED</h4>
+</footer></body></html>
+

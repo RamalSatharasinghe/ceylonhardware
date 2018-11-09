@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head type="text/css"><link rel ="stylesheet" href="style1.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+
+function myContact(){
+
+var myname = document.forms["contact1"]["yourname"].value;
+var mail1 = document.forms["contact1"]["email"].value;
+var phone1 = document.forms["contact1"]["phone"].value;
+var subject1 = document.forms["contact1"]["subject"].value;
+var message1 = document.forms["contact1"]["message"].value;
+
+if(myname == "" || mail == "" || phone1 == "" || subject1 == "" || message1 == "")
+{
+	alert("Incomlete Form");
+	return false;}}
+</script>
+<style>
+#b1{
+  width:250px;
+	   height:45px;
+	   border:none;
+	   background:steelblue;
+	   color:white;}
+	   
+
+	   
+	   #contact{
+	   width:1800px000px;
+	   height:700px;
+	   left-padding:5px;
+	  
+	 }
+
+
+#contact1{
+
+width:500px;
+height:400px;
+}	   
+
+#email{
+ display:block;
+	  margin-bottom:25px;
+	  width:350px;
+	  border:2px solid steelblue;}
+	  
+#phone{
+ display:block;
+	  margin-bottom:25px;
+	 width:350px;
+	  border:2px solid steelblue;}	  
+	  
+#message{
+ display:block;
+	  margin-bottom:25px;
+	 width:350px;
+	  border:2px solid steelblue;
+	  height:80px;}
+
+
+.contact2{
+  display:block;
+	  margin-bottom:25px;
+	 width:350px;
+	  border:2px solid steelblue;
+	  }</style></head>
+
+
+<title>Ceylon Hardware Company</title>
+
+<body background="Images/wb1.jpg">
+<header id="t1"><a href="page1.html"><img  href="page1.html"src="Images/L1.jpg"></a>Ceylon Hardware Company
+
+ 
+ 
+
+ </header>
+ <div class="dropdown">
+ <a href="page1.html"><button class="active">Home</button></a>
+ </div>
+ 
+<div class="dropdown">
+  <button class="active">Services</button>
+	 <div class="dropdown-content">
+    <a href="requirement1.html">Get Support</a>
+    <a href="login.html">Forum</a>
+  </div>
+  </div>
+  
+  <div class="dropdown">
+  <button class="active">Products</button>
+	<div class="dropdown-content">
+  <a href="#">Desktop</a>
+   <a href="laptops.php">Laptop</a>
+    <a href="#">Tools</a>
+ </div>
+ </div>
+  <div class="dropdown">
+ <a href="aboutus.html"><button class="active">About Us</button></a>
+ </div>
+ 
+<div class="dropdown">
+ <a href="contact.html"><button class="active">Contact Us</button></a>
+ </div>
+ 
+ 
+  <div align="right"><a href="login2.html"><button type="button" class="btn btn-primary">Login</button>
+</a>
+ <a href="signup.html"><img class="transparent"src="Images/signup.png" width="50px" height="50px" ></a></div><br>
+ 
+</br> 
+
+
+<div id="contact">
+
+<iframe align="right"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31687.082210143784!2d79.94792258924487!3d6.9043203307075105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256d59601df81%3A0x31a1dd96e8d49ba!2sMalabe!5e0!3m2!1sen!2slk!4v1533383713015" width="1000" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
+ <div style="margin-left:30px;">
+<form name="contact1" id="contact1" method="post"  onsubmit="return myContact()" action="contact.php">
+<strong><h2 style="color:red;">Contact us</h2></strong><br/>
+
+<input type="text" class="contact2" name="yourname" placeholder="Yourname" ><br/>
+<input type="email"  id="email"name="email1" placeholder="E-mail"><br/>
+<input type="number" id="phone" name="phone" placeholder="Phone Number"><br/>
+<input type="text"  class="contact2"name="subject" placeholder="Subject"><br/>
+<input type="text" id="message"name="message" placeholder="Message" ><br/>
+<input type="submit" name="submit1" value="Submit" class="transparent" id="b1">
+
+</form>
+ </div>
+</div>
+
+<span class="badge badge-primary">Contact No: 0112312396</span>
+  <span class="badge badge-secondary">ceylonhardware@gmail.com</span>
+  <span class="badge badge-success">69/A, Kaduwela Rd, Malabe</span>
+  
+  
+  
+  <br>
+
+
+
+<a href="#"><img class="transparent"src="Images/fb.png" height="50px" width="50px" align="right"></a>
+<a href="#"><img class="transparent"src="Images/twitter.jpg" height="50px" width="50px" align="right"></a>
+
+<a href="#"><img class="transparent"src="Images/google.png" height="50px" width="50px" align="right"></a>
+
+<a href="#"><img class="transparent"src="Images/intagram.jpg" height="50px" width="50px" align="right"></a>
+<a href="https://www.youtube.com/"><img class="transparent"src="Images/youtube.png" height="50px" width="50px" align="right"></a>
+
+
+
+
+
+
+<footer><h4>2018 Ceylon Hardware Company,INC.ALL RIGHT RESERVED</h4>
+</footer></body></html>

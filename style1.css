@@ -1,0 +1,171 @@
+#t1 {
+    background-color:#bbe1f3;
+	background-position:100px;
+    padding: 15px;
+    text-align:left;
+    font-size: 35px;
+    color: black;
+
+}
+
+#search{
+	
+	font-size:20px;
+}
+.search{
+	
+	padding:5px;
+	outline:0px;
+	
+}
+.submit{
+	outline:0px;
+	
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+} 
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+}
+#latest{
+	
+	font-size:45px;
+	font-color:bold;
+}
+
+
+
+.cnt{
+	
+	padding-left:5px;
+	padding-right:15px;
+	margin-left:100px;
+	width:1200px;
+	height:600px;
+	margin-top:50px;
+}
+
+
+  input{
+	padding:10px;
+	font-size:inherit;
+	
+
+}
+.transparent{
+	opacity: 0.5;
+    filter: alpha(opacity=50); 
+}
+
+.transparent:hover{
+	opacity:1.0;
+	filter:alpha(opacity=100);
+	
+}
+
+	
+//forum styles
+#forum{
+	text-align:left;
+	
+}	
+
+#back{
+	
+    width: 1500px;
+     height: 750px;
+}
+
+footer{
+	background-color:#bbe1f3;
+    padding: 15px;
+}
+//tharindu
+
+
+#ab{
+	background-color:#f4040c;
+	height:365px;
+	width:350px;
+}
+
+
+
+#bb{
+	background-color:#44CF60;
+	height:575px;
+	width:450px;
+}
+
+
+#pd{
+	font-size:25px;  
+	color:white;
+	background-color:#686c72;
+	
+}
+
+#pd1{
+	font-size:20px;
+	color:black;
+	font-family:Arial Black", Gadget, sans-serif; 
+	
+} 
+
+
+#ma{
+	background-color:#686c72;
+	font-family:Impact, Charcoal, sans-serif;
+	
+	color:white;
+	font-size:28px;
+	height:75px;
+	width:450px;
+}
+	
+
+
+
+
+button{
+		 background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+		
+}
+@media screen and(max-width:1499px){
+	
+	.cnt{
+		width:1200px;
+	}
+}

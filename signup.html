@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head type="text/css"><link rel="stylesheet" href="style1.css">
+<script type="text/javascript">
+function myFunc(){
+	var temp1 = document.forms["sign"]["firstname"].value;
+	var temp2 = document.forms["sign"]["secondname"].value;
+	var temp3 = document.forms["sign"]["password"].value;
+	var temp4 = document.forms["sign"]["confirm"].value;
+	var temp5 = document.forms["sign"]["email"].value;
+	var temp6 = document.forms["sign"]["number"].value;
+	var temp7 = document.forms["sign"]["address"].value;
+	var temp8 =document.forms["sign"]["occupation"].value;
+	var temp9 = document.forms["sign"]["checkbox"].checked;
+	
+	
+	if(temp9 === false || temp1 == ""||temp2 == ""||temp3 == ""||temp4 == ""||temp5 == ""||temp6 == ""||temp7 == ""||temp8 == "" )
+	{
+		alert("Incomplete form");
+		
+		return false;
+	
+	}
+	
+	
+
+	
+	
+}
+</script>
+<style>
+#up{
+	text-align:center;
+	color:blue;}
+#sign{
+	
+	width:320px;
+	
+	
+	}
+#block{
+	width:1400px;
+	height:800px;
+	 
+	}
+
+.I1{
+	  display:block;
+	  margin-bottom:25px;
+	 width:100%;
+	  border:2px solid steelblue;
+	   }
+.I2{ display:block;
+	  margin-bottom:25px;
+	 width:100%;
+	  border:2px solid steelblue;
+	  
+  }
+	 
+.I3{
+	   display:block;
+	  margin-bottom:25px;
+	 width:100%;
+	  border:2px solid steelblue;
+	   
+  }
+  
+.I5{
+	  display:block;
+	  margin-bottom:25px;
+	 width:100%;
+	  border:2px solid steelblue;
+	  
+  }
+  
+.I4{
+	   display:block;
+	  margin-bottom:25px;
+	 width:100%;
+	  border:2px solid steelblue;
+  }
+#I6{
+	   width:344px;
+	   height:45px;
+	   border:none;
+	   background:steelblue;
+	   color:white;
+  }
+  
+  
+ 
+</style>
+</head>
+
+<title>Ceylon Hardware Company</title>
+<body background="Images/wb1.jpg">
+<header id="t1"><a href="page1.html"><img  src="Images/L1.jpg"></a>Ceylon Hardware Company
+
+</header>
+<div class="dropdown">
+ <a href="page1.html"><button class="active">Home</button></a>
+ </div>
+
+<div class="dropdown"> 
+<button class="active">Services</button>
+<div class="dropdown-content">
+<a href="requirement1.html">Get Support</a>
+<a href="login.html">Forum</a>
+</div></div>
+
+<div class="dropdown">
+  <button class="active">Products</button>
+	<div class="dropdown-content">
+  <a href="#">Desktop</a>
+   <a href="laptops.php">Laptop</a>
+    <a href="#">Tools</a>
+ </div>
+ </div>
+ <div class="dropdown">
+ <a href="aboutus.html"><button class="active">About Us</button></a>
+ </div>
+ <div class="dropdown">
+ <a href="contact.html"><button class="active">Contact Us</button></a>
+ </div>
+ 
+ <a href="signup.html"><img class="transparent"src="Images/signup.png" width="50px" height="50px" align="right"></a>
+ 
+  <div id="search" align="right">
+<input type="text" name="text" class="search" placeholder="Search here" >
+<button class="submit" >&#128269 </button>
+</div>
+</br> </br>
+
+
+
+<center>
+<div id="block">
+<h1 id="up">Signup</h1></br>
+<form id="sign" method="POST"  onsubmit="return myFunc()" action="signup.php" name="sign">
+
+
+<input class="I1" type="text" name="firstname" placeholder="First name.." >
+
+<input class="I1" type="text" name="secondname" placeholder="Second name..."  >
+<input class="I2"type="password" name="password" placeholder="password">
+
+
+<input class="I2" type="password" name="confirm" placeholder="confirm password">
+<input class="I3"type="email" name="email" placeholder="email">
+
+<input class="I4" type="contactnumber" name="number" placeholder="Contact number">
+
+<input class="I5"type="address" name="address" placeholder="address">
+
+
+<input class="I1"type="text" name="occupation" placeholder="occupation"class="sign">
+
+<input type="checkbox" name="checkbox" value="notrobot">
+<input id="I6" class="transparent"type="submit" name="submit" value="Submit" >
+</form>
+</div>
+</center>
+
+
+<a href="#"><img class="transparent"src="Images/fb.png" height="50px" width="50px" align="right"></a>
+<a href="#"><img class="transparent"src="Images/twitter.jpg" height="50px" width="50px" align="right"></a>
+
+<a href="#"><img class="transparent"src="Images/google.png" height="50px" width="50px" align="right"></a>
+
+<a href="#"><img class="transparent"src="Images/intagram.jpg" height="50px" width="50px" align="right"></a>
+<a href="https://www.youtube.com/"><img class="transparent"src="Images/youtube.png" height="50px" width="50px" align="right"></a>
+
+
+
+
+
+
+<footer><h4>2018 Ceylon Hardware Company,INC.ALL RIGHT RESERVED</h4>
+</footer></body></html>
+
