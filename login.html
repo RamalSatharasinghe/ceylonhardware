@@ -1,21 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head type="text/css"><link rel ="stylesheet" href="style1.css">
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-#login1{
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
 
-    width: 1345px;
-    height: 600px;}
-	
-	
-	
-	</style></head>
+.int {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#bt {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+</head>
 
 
 <title>Ceylon Hardware Company</title>
@@ -23,14 +73,13 @@
 <body background="Images/wb1.jpg">
 <header id="t1"><a href="page1.html"><img src="Images/L1.jpg"></a>Ceylon Hardware Company
 
-
+ 
  
 
  </header>
  <div class="dropdown">
  <a href="page1.html"><button class="active">Home</button></a>
  </div>
- 
 <div class="dropdown">
   <button class="active">Services</button>
 	 <div class="dropdown-content">
@@ -42,8 +91,8 @@
   <div class="dropdown">
   <button class="active">Products</button>
 	<div class="dropdown-content">
-  <a href="#">Desktop</a>
-   <a href="laptops.php">Laptop</a>
+  <a href="laptops.html">Desktop</a>
+   <a href="laptops.html">Laptop</a>
     <a href="#">Tools</a>
  </div>
  </div>
@@ -54,45 +103,40 @@
  <a href="contact.html"><button class="active">Contact Us</button></a>
  </div>
  
- <div align="right"><a href="login2.html"><button type="button" class="btn btn-primary">Login</button>
-</a>
- <a href="signup.html"><img class="transparent"src="Images/signup.png" width="50px" height="50px" ></a></div><br>
+ <a href="signup.html"><img class="transparent"src="Images/signup.png" width="50px" height="50px" align="right"></a>
  
- 
- 
-<br>
-<div id="login1">
+  <div id="search" align="right">
+<input type="text" name="text" class="search" placeholder="Search here" >
+<button class="submit" >&#128269 </button>
+</div>
+</br> </br>
+<h2>Login Form</h2>
 
-</br> </br> </br> </br> </br> </br> 
+<form method="post" action="login.php" >
+  <div class="imgcontainer">
+    <img src="Images/avatar.jpg" alt="Avatar" class="avatar">
+  </div>
 <center>
-<strong><h2>Login Box</h2></strong>
-<form id="ab" name="ab" action="login.php" method="post">
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required class="int"><br>
 
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required  class="int">
+        <br>
+    <button type="submit" id="bt" name="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div></center>
 
-
-<label for="username" > User name </label><br>
-<input type="text" size="35" required name="username"><br><br>
-
-<label for="password" >Password </label><br>
-<input type="password" size="35" required name="password"><br><br>
-
-
-<button type="submit" name="submit"> LogIn</button><br><br>
-
-<button type="submit" > <a href="forumsignup.html">Create an Account</a> </button>
+  <div class="container" style="background-color:#f1f1f1">
+   <center> <button type="button" class="cancelbtn"><a href="forumsignup.html">Signup</a></button></center>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
 </form>
 
-
-
-
-
-
-
-
-</center>
-
-
-</div>
+</div></br></br></br>
 
 
 <a href="#"><img class="transparent"src="Images/fb.png" height="50px" width="50px" align="right"></a>

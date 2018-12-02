@@ -45,9 +45,44 @@ require 'config.php';
 <div class="dropdown">
  <a href="contact.html"><button class="active">Contact Us</button></a>
  </div>
- 
- <a href="signup.html"><img class="transparent"src="Images/signup.png" width="50px" height="50px" align="right"></a>
- 
+
+ <div class="container">
+
+ <div align="right">
+   <img class="transparent"src="Images/profilepic.png" width="100px" height="100px" align="right" alt="profile"><br><br><br><br><br><br>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" >Upload</button>
+  </div>
+
+
+  
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Profile Picture</h4>
+		  <form action="profilepic.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
+		  
+        </div>
+        <div class="modal-body">
+          <p></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
   
 </br> </br>
 
@@ -77,33 +112,52 @@ require 'config.php';
 		$result=mysqli_query($conn,$sql);
 		
 		if(mysqli_num_rows($result) > 0)
+			
 		{
 			
 			?>
-			
-			<br><br>
-	<center><table width="200" border="1">
-		<tr><th>First Name</th><th>Last Name</th><th>Email</th><th>Contact Number</th><th>Address</th><th>Occupation</th></tr>
-			
-	<?php		
+			<?php		
 			while($row = mysqli_fetch_assoc($result)){
 				?>
-				<tr><td><?php echo $row['First_name'];?></td>
-				<td><?php echo $row['Second_name'];?></td>
-				<td><?php echo $row['Email'];?></td>
-				<td><?php echo $row['Contact_number'];?></td>
-				<td><?php echo $row['Address'];?></td>
-				<td><?php echo $row['Occupation'];?></td></tr>
 				
-				
-		<?php
-		}
-			?>
+				<div class="container">
+  <strong><h2> Account Details</h2></strong></br></br>
+ 
+  <form class="form-inline" action="">
+    <div class="form-group">
+      <label for="fname">First Name</label>
+      <input type="text" class="form-control" id="fname" value="<?php echo $row['First_name'];?>" disabled>
+    </div>&nbsp&nbsp&nbsp&nbsp
+    <div class="form-group">
+      <label for="lname">Last Name:</label>
+      <input type="text" class="form-control" id="lname" value="<?php echo $row['Second_name'];?>"disabled>
+    </div>
+	</br></br>
+	 <div class="form-group">
+      <label for="district">Email:</label>
+      <input type="text" class="form-control" id="email" value="<?php echo $row['Email'];?>" disabled>
+    </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <div class="form-group">
+      <label for="lname">Contact Number:</label>
+      <input type="text" class="form-control" id="number" value="<?php echo $row['Contact_number'];?>"disabled>
+    </div></br></br>
+	 <div class="form-group">
+      <label for="lname">Address:</label>
+      <input type="text" class="form-control" id="address" value="<?php echo $row['Address'];?>"disabled>
+    </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<div class="form-group">
+      <label for="lname">Occupation:</label>
+      <input type="text" class="form-control" id="occupation" value="<?php echo $row['Occupation'];?>"disabled>
+    </div>
+	
+	
+  </form>
+</div>
 			
-			</table></center>
+			
 
 			<?php
-	}}
+	}}}
 			?>
 			<br><br><br>
 			

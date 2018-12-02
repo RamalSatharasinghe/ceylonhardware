@@ -125,29 +125,41 @@ function newfun(){
 		{
 			
 			?>
-				<br><br>
-	<center><table width="200" border="1">
-		<tr><th>Card Number</th><th>Code</th><th>Expire Date</th></tr>
-		
-		<?php		
+			<?php		
 			while($row = mysqli_fetch_assoc($result)){
 				?>
-				<tr><td><?php echo $row['card_id'];?></td>
-				<td><?php echo $row['code'];?></td>
-				<td><?php echo $row['Expire_date'];?></td>
 				
-				</tr>
+	</br>	
+				<div class="container">
+  <strong><h2> Card Details</h2></strong></br></br>
+ 
+  <form class="form-inline" action="">
+    <div class="form-group">
+      <label for="fname">Card Number:</label>
+      <input type="text" class="form-control" id="number" value="<?php echo $row['card_id'];?>" disabled>
+    </div>
+    
+	</br></br></br>
+	 <div class="form-group">
+      <label for="district">Code:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <input type="text" class="form-control" id="code" value="<?php echo $row['code'];?>" disabled>
+    
+    </div></br></br></br>
+	 <div class="form-group">
+      <label for="lname">Expire Date:</label>
+      <input type="text" class="form-control" id="address" value="<?php echo $row['Expire_date'];?>"disabled>
+    </div>
+	
+  </form>
+</div>
+				
 				
 				
 		<?php
-		}
+	}}}
 			?>
 			
-			</table></center>
-
-			<?php
-	}}
-			?>
+			
 			<br><br>
 <center>
 			<div class="container">
@@ -177,7 +189,7 @@ function newfun(){
   
 </div>
 </center>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
 
 <a href="#"><img class="transparent"src="Images/fb.png" height="50px" width="50px" align="right"></a>
 <a href="#"><img class="transparent"src="Images/twitter.jpg" height="50px" width="50px" align="right"></a>
